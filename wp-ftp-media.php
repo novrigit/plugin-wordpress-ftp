@@ -26,11 +26,11 @@ function wpse_74180_upload_to_ftp( $args ) {
 	 */
 
 	$settings = array(
-		'host'	  =>	'srv58.niagahoster.com',  			// * the ftp-server hostname
+		'host'	  =>	'ip or hostname',  			// * the ftp-server hostname
 		'port'    =>    21,                                 // * the ftp-server port (of type int)
-		'user'	  =>	'remotes@remoteimage.asacitawan.com', 				// * ftp-user
-		'pass'	  =>	'niaga123',	 				// * ftp-password
-		'cdn'     =>    'remoteimage.asacitawan.com',			// * This have to be a pointed domain or subdomain to the root of the uploads
+		'user'	  =>	'username', 				// * ftp-user
+		'pass'	  =>	'password',	 				// * ftp-password
+		'cdn'     =>    'cdn.example.com',			// * This have to be a pointed domain or subdomain to the root of the uploads
 		'path'	  =>	'/',	 					// - ftp-path, default is root (/). Change here and add the dir on the ftp-server,
 		'base'	  =>    $upload_dir['basedir']  	// Basedir on local 
 	);
