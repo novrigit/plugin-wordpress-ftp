@@ -20,11 +20,11 @@ function wpse_74180_upload_to_ftp( $args ) {
 	 * If marked with (-) its optional 
 	 */
 	$settings = array(
-		'host'	  =>	'ip or hostname',  			// * the ftp-server hostname
+		'host'	  =>	'ip or hostname ftp/hosting',  			// * the ftp-server hostname
 		'port'    =>    21,                                 // * the ftp-server port (of type int)
-		'user'	  =>	'username', 				// * ftp-user
-		'pass'	  =>	'password',	 				// * ftp-password
-		'cdn'     =>    'cdn.example.com',			// * This have to be a pointed domain or subdomain to the root of the uploads
+		'user'	  =>	'username ftp', 				// * ftp-user
+		'pass'	  =>	'password ftp',	 				// * ftp-password
+		'cdn'     =>    'subdomain.domain.com',			// * This have to be a pointed domain or subdomain to the root of the uploads
 		'path'	  =>	'/',	 					// - ftp-path, default is root (/). Change here and add the dir on the ftp-server,
 		'base'	  =>    $upload_dir['basedir']  	// Basedir on local 
 	);
